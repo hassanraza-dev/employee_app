@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+      
+      
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+      
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyD69z0u081yAbfgX8g2dvjLOdKIzmWa7KQ",
+          authDomain: "myemployee-57531.firebaseapp.com",
+          databaseURL: "https://myemployee-57531.firebaseio.com",
+          projectId: "myemployee-57531",
+          storageBucket: "myemployee-57531.appspot.com",
+          messagingSenderId: "251911588682",
+          appId: "1:251911588682:web:3fb206277b9b8386910fb3",
+          measurementId: "G-150SLJFYZP"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+      
+      <link rel="stylesheet" href="./style.css">
+      </head>
+</head>
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-body">
+                        
+						<div class="form-group">
+							<h2>Create account</h2>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupName">Your name</label>
+							<input id="name" type="text" maxlength="50" class="form-control">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupEmail">Email</label>
+							<input id="email" type="email" maxlength="50" class="form-control">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupEmailagain">Company Name</label>
+							<input id="company" type="text" maxlength="50" class="form-control">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupPassword">Password</label>
+							<input id="password" type="password" maxlength="25" class="form-control" placeholder="at least 6 characters" length="40">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupPasswordagain">Confirm Password</label>
+							<input id="c-password" type="password" maxlength="25" class="form-control">
+						</div>
+						
+							<button class="btn btn-info btn-block" onclick="signup()">Create your account</button>
+						
+						
+						<hr>
+						<p></p>Already have an account? <a href="../../index.html">Sign in</a></p>
+					
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="./register.js"></script>
+</body>
+</html>
